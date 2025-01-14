@@ -8,6 +8,9 @@ project(InvManager VERSION 1.0)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED True)
 
+# Gather all .cpp files from the src directory
+file(GLOB SRC_FILES "${PROJECT_SOURCE_DIR}/src/*")
+
 # Add the executable target
 add_executable(InvManager src/main.cpp)
 
